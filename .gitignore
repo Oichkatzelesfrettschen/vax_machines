@@ -1,0 +1,44 @@
+# ===========================================
+# Disk Images - Download from GitHub Releases
+# ===========================================
+# These files are large and distributed separately via GitHub Releases.
+# Run: ./download-images.sh
+#
+# Files (obtain from releases):
+#   - RA81.vhd      : Main BSD 4.3 system disk (237MB, VHD format)
+#   - RA81-src.vhd  : Sources disk (406MB, VHD format)
+#   - boot43        : PDP-11 boot loader (22KB)
+#
+*.vhd
+*.VHD
+*.000
+*.001
+*.img
+*.iso
+*.qcow2
+boot43
+
+# SIMH-generated runtime files
+printer.txt
+vax780-xu.mac
+
+# Checksums (regenerate or obtain from releases)
+checksums.sha256
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editor backups
+*~
+*.swp
+*.swo
+\#*\#
+.#*
+
+# IDE
+.idea/
+.vscode/
+*.code-workspace
