@@ -5,9 +5,9 @@
 # Install via: brew install simh  OR  port install simh
 #
 # Disk images required (download from GitHub Releases):
-#   - RA81.vhd      : Main system disk (VHD format)
-#   - RA81-src.vhd  : Sources disk (VHD format)
-#   - boot43        : PDP-11 boot loader
+#   - RA81.raw      : Main system disk (RAW format, 457MB)
+#   - RA81-src.vhd  : Sources disk (VHD format, 406MB)
+#   - boot43        : PDP-11 boot loader (22KB)
 #
 # Run ./download-images.sh to fetch disk images
 #
@@ -20,7 +20,7 @@ cd "$SCRIPT_DIR"
 
 # Check for required files
 MISSING_FILES=()
-for required_file in vax780.ini boot43 RA81.vhd; do
+for required_file in vax780.ini boot43 RA81.raw; do
     if [[ ! -f "$required_file" ]]; then
         MISSING_FILES+=("$required_file")
     fi
@@ -37,9 +37,9 @@ if [[ ${#MISSING_FILES[@]} -gt 0 ]]; then
     exit 1
 fi
 
-# Find SIMH VAX emulator
+# Find SIMH VAX emulator (different names across package managers)
 VAX_EMU=""
-for candidate in vax780 vax; do
+for candidate in vax780 simh-vax780 vax simh-vax; do
     if command -v "$candidate" &>/dev/null; then
         VAX_EMU="$candidate"
         break

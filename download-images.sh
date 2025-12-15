@@ -21,11 +21,11 @@ REPO_OWNER="${REPO_OWNER:-YOUR_USERNAME}"
 REPO_NAME="${REPO_NAME:-vax_machines}"
 RELEASE_TAG="${1:-latest}"
 
-# Files to download (VHD format for sparse storage)
+# Files to download
 DISK_FILES=(
     "boot43"          # 22KB  - PDP-11 boot loader
-    "RA81.vhd"        # 237MB - Main BSD 4.3 system disk
-    "RA81-src.vhd"    # 406MB - BSD 4.3 sources disk
+    "RA81.raw"        # 457MB - Main BSD 4.3 system disk (RAW)
+    "RA81-src.vhd"    # 406MB - BSD 4.3 sources disk (SIMH VHD)
 )
 
 # Checksums file

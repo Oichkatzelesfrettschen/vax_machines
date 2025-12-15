@@ -5,10 +5,11 @@
 # Run: ./download-images.sh
 #
 # Files (obtain from releases):
-#   - RA81.vhd      : Main BSD 4.3 system disk (237MB, VHD format)
+#   - RA81.raw      : Main BSD 4.3 system disk (457MB, RAW format)
 #   - RA81-src.vhd  : Sources disk (406MB, VHD format)
 #   - boot43        : PDP-11 boot loader (22KB)
 #
+*.raw
 *.vhd
 *.VHD
 *.000

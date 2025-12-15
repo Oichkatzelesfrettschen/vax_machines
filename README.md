@@ -36,7 +36,7 @@ Disk images are distributed via [GitHub Releases](../../releases) to save reposi
 
 | File | Size | Format | Description |
 |------|------|--------|-------------|
-| `RA81.vhd` | 237MB | VHD | Main BSD 4.3 system disk |
+| `RA81.raw` | 457MB | RAW | Main BSD 4.3 system disk |
 | `RA81-src.vhd` | 406MB | VHD | BSD 4.3 sources disk |
 | `boot43` | 22KB | Binary | PDP-11 boot loader |
 
