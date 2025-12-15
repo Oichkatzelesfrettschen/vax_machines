@@ -33,7 +33,7 @@ if [[ ${#MISSING_FILES[@]} -gt 0 ]]; then
     done
     echo ""
     echo "Download disk images with: ./download-images.sh"
-    echo "Or manually from: https://github.com/YOUR_USERNAME/vax_machines/releases"
+    echo "Or manually from: https://github.com/Oichkatzelesfrettschen/vax_machines/releases"
     exit 1
 fi
 

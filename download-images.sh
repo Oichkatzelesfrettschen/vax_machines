@@ -17,7 +17,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
 # Configure these for your repository
-REPO_OWNER="${REPO_OWNER:-YOUR_USERNAME}"
+REPO_OWNER="${REPO_OWNER:-Oichkatzelesfrettschen}"
 REPO_NAME="${REPO_NAME:-vax_machines}"
 RELEASE_TAG="${1:-latest}"
 
